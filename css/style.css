@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+:root {
+  --color-bg-card: #000501;
+  --color-letter: #dae0f2;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  height: 100vh;
+  padding: 10px 5px;
+  background-image: url(https://www.webyempresas.com/wp-content/uploads/2019/10/criptomonedas-600x400.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(3px);
+}
+.container {
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background: var(--color-bg-card);
+  color: var(--color-letter);
+}
+.container__title {
+  margin: 20px 0;
+}
+.container__form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 5px;
+}
+.form__select {
+  margin: 10px 0;
+  padding: 5px 10px;
+  outline: none;
+}
+.form__btn {
+  background: var(--color-letter);
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.information__warn {
+  color: red;
+  font-weight: bold;
+  padding: 10px 5px;
+}
+
+.information__crypto {
+  display: inline-table;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  font-weight: bold;
+}
+
+.preload {
+  animation: preload 2s linear forwards;
+  -webkit-animation: preload 2s linear forwards;
+}
+@keyframes preload {
+  0% {
+    transform: rotate(0) scale(1);
+    -webkit-transform: rotate(0) scale(1);
+    -moz-transform: rotate(0) scale(1);
+    -ms-transform: rotate(0) scale(1);
+    -o-transform: rotate(0) scale(1);
+  }
+  25% {
+    transform: rotate(1turn);
+    -webkit-transform: rotate(1turn);
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -o-transform: rotate(1turn);
+  }
+
+  50% {
+    transform: rotate(0deg) scale(1.5);
+    -webkit-transform: rotate(0deg) scale(1.5);
+    -moz-transform: rotate(0deg) scale(1.5);
+    -ms-transform: rotate(0deg) scale(1.5);
+    -o-transform: rotate(0deg) scale(1.5);
+  }
+  75% {
+    transform: rotate(1turn) scale(0.8);
+    -webkit-transform: rotate(1turn) scale(0.8);
+    -moz-transform: rotate(1turn) scale(0.8);
+    -ms-transform: rotate(1turn) scale(0.8);
+    -o-transform: rotate(1turn) scale(0.8);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
