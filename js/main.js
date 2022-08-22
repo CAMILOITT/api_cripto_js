@@ -58,10 +58,5 @@ $btnQuote.addEventListener('click', (e) => {
     <p class="information__warn">Por favor seleccione una moneda</p>
     `;
   }
-  callApi().onload = function () {
-    let $loading = document.getElementById('loading');
-    $loading.style.visibility = 'hidden';
-    $loading.style.opacity = '0';
-  };
   callApi();
 });
