@@ -12,7 +12,7 @@
 body {
   height: 100vh;
   padding: 10px 5px;
-  background-image: url(https://www.webyempresas.com/wp-content/uploads/2019/10/criptomonedas-600x400.jpg);
+  background-image: url('https://www.webyempresas.com/wp-content/uploads/2019/10/criptomonedas-600x400.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -54,6 +54,7 @@ body {
   cursor: pointer;
 }
 
+.warn,
 .information__warn {
   color: red;
   font-weight: bold;
